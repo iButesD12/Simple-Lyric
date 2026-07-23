@@ -1,0 +1,64 @@
+<!DOCTYPEhtml>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="witdh=device-width, initial-scale=1">
+<title>Kalkulator iButes</title>
+<link rel="stylesheet" href="kalkulator.css">
+
+<body>
+
+  <div id="starfield"></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="rainbow-name">Kalkulator Abu</span>
+    </div>
+  </nav>
+
+  <div class="calc-stage">
+    <div class="aura"></div>
+
+    <div class="calculator">
+      <div id="history">&nbsp;</div>
+      <input type="text" id="display" readonly>
+
+      <div class="buttons">
+        <button class="func" onclick="tambah('(')">(</button>
+        <button class="func" onclick="tambah(')')">)</button>
+        <button class="func" onclick="tambah('%')">%</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+
+        <button class="func" onclick="toggleSign()">±</button>
+        <button onclick="hapus()">⌫</button>
+        <button class="operator" onclick="tambah('/')">÷</button>
+        <button class="operator" onclick="tambah('*')">×</button>
+
+        <button onclick="tambah('7')">7</button>
+        <button onclick="tambah('8')">8</button>
+        <button onclick="tambah('9')">9</button>
+        <button class="operator" onclick="tambah('-')">−</button>
+
+        <button onclick="tambah('4')">4</button>
+        <button onclick="tambah('5')">5</button>
+        <button onclick="tambah('6')">6</button>
+        <button class="operator" onclick="tambah('+')">+</button>
+
+        <button onclick="tambah('1')">1</button>
+        <button onclick="tambah('2')">2</button>
+        <button onclick="tambah('3')">3</button>
+        <button class="equal" onclick="hitung()">=</button>
+
+        <button style="grid-column: span 2;" onclick="tambah('0')">0</button>
+        <button onclick="tambah('.')">.</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Dibuat dengan <span>♥</span> — Kalkulator Abu</div>
+
+</body>
+
+<script src="kalkulator.js"></script>
+</head>
+</html>
